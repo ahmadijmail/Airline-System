@@ -1,5 +1,8 @@
 {
   "devDependencies": {
     "@faker-js/faker": "^7.3.0"
+  },
+  "dependencies": {
+    "socket.io-client": "^4.5.1"
   }
 }
