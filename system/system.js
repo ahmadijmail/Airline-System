@@ -40,8 +40,8 @@ ioServer.on("connection", (socket) => {
     });
   });
 
-  socket.on("deleteQue", (queue) => {
-   delete queue.flights.id;
-    console.log("unread flights done and deleted");
+  socket.on("deleteQue", (flight) => {
+   delete queue.flights[flight.id];
+    console.log("Missed flight is recived and deleted");
   });
 });
