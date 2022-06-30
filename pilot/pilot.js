@@ -15,7 +15,7 @@ airlineconn2.on("flight", handelflight);
 
 function handelflight(flight){
   console.log(`Pilot:Sorry i didn't catch this flight ID ${flight.id} `);
-  airlineconn2.emit("deleteQue",flight.id );
+  airlineconn2.emit("deleteQue",flight );
 }
 
 function newFlight(payload) {
